@@ -1,6 +1,6 @@
 // heap sort
 
-void swap(int* a. int* b) {
+void swap(int* a, int* b) {
   int tmp = *a;
   *a = *b;
   *b = tmp;
@@ -10,11 +10,11 @@ void heapify(int* arr, int size, int root) {
   int largest = root;
   int left = root * 2, right = root * 2 + 1;
   
-  if (left < n && arr[left] > arr[largest]) {
+  if (left < size && arr[left] > arr[largest]) {
     largest = left;
   }
   
-  if (right < n && arr[right] > arr[largest]) {
+  if (right < size && arr[right] > arr[largest]) {
     largest = right;
   }
   
